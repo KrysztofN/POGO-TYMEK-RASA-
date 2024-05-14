@@ -42,7 +42,7 @@ How to use website with the bot?
 5. You should see this:
 6. <br><br> ![image](https://github.com/KrysztofN/POGO-TYMEK-RASA-/assets/149100411/517e2bad-0120-4d4a-8f6d-a8945b20e18f)
 
-
+<br><br>
 **Pogo-Tymek in action:**
 <br>
 1. **Telegram private conversation:**<br><br> ![one](https://github.com/KrysztofN/POGO-TYMEK-RASA-/assets/149100411/dd2501db-3ce1-4414-bce9-792bc23d1cdd) <br>
