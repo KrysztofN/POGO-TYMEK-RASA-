@@ -42,8 +42,8 @@ How to use website with the bot?
 
 **Pogo-Tymek in action:**
 <br>
-1. **Telegram private conversation:<br> **![one](https://github.com/KrysztofN/POGO-TYMEK-RASA-/assets/149100411/dd2501db-3ce1-4414-bce9-792bc23d1cdd) <br>
-2. **Telegram Channel:** <br>![image](https://github.com/KrysztofN/POGO-TYMEK-RASA-/assets/149100411/1725f4f4-a820-43ee-b657-067691f74c1d) <br>
+1. **Telegram private conversation:**![one](https://github.com/KrysztofN/POGO-TYMEK-RASA-/assets/149100411/dd2501db-3ce1-4414-bce9-792bc23d1cdd) <br>
+2. **Telegram Channel:** <br><br>![image](https://github.com/KrysztofN/POGO-TYMEK-RASA-/assets/149100411/1725f4f4-a820-43ee-b657-067691f74c1d) <br>
 3. **Webapp:**<br> ![image](https://github.com/KrysztofN/POGO-TYMEK-RASA-/assets/149100411/b7547636-1f05-4b70-b16c-bfb2ca40958b) <br>
 
 
