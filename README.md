@@ -37,10 +37,8 @@ How to use website with the bot?
 <br>
 1. If you have problems with getting internal server error when you try to run your telegram bot
 2. Try to type in terminal: pip install -U aiogram==2.25.2.
-3. If that didn't help try to upgrade rasa and again aiogram.
-4. <br><br> ![image](https://github.com/KrysztofN/POGO-TYMEK-RASA-/assets/149100411/de2de1ea-0bcd-43de-8017-4b2c6e380a83)
-5. You should see this:
-6. <br><br> ![image](https://github.com/KrysztofN/POGO-TYMEK-RASA-/assets/149100411/517e2bad-0120-4d4a-8f6d-a8945b20e18f)
+3. If that didn't help try to upgrade rasa and again aiogram. <br><br> ![image](https://github.com/KrysztofN/POGO-TYMEK-RASA-/assets/149100411/de2de1ea-0bcd-43de-8017-4b2c6e380a83)
+5. You should see this: <br><br> ![image](https://github.com/KrysztofN/POGO-TYMEK-RASA-/assets/149100411/517e2bad-0120-4d4a-8f6d-a8945b20e18f)
 
 <br><br>
 **Pogo-Tymek in action:**
