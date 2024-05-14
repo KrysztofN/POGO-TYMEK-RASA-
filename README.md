@@ -14,7 +14,8 @@ Weather Bot that supports over 200 000 cities worldwide.
 3. Enter a date
 4. Get the weather
 <br><br>
-- Commands: /restart (restarts conversation with the bot),  /hej (starts the converstion)
+Good to know...
+- Commands: /restart (restarts conversation with the bot),  /hej (starts the conversation)
 - Bot accepts date formats specified in the date_check.py file
 - Bot can recognize variues cities (including vast majority of polish ones), corrects small typos
 - Issues with running multiple questions to the bot, sometimes gives an unexpected result
