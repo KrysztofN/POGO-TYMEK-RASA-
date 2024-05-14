@@ -24,7 +24,7 @@ class ActionWeatherNow(Action):
                 return [SlotSet("Date", None), FollowupAction("utter_date")]
 
             degree_sign = u'\N{DEGREE SIGN}'
-            api_key = 'a24e1746e81fbe3720efe9962684d6d5'
+            api_key = 'api_key'
             payload = {'q': loc, 'units': 'metric', 'appid': api_key, 'lang': 'pl'}
             response = requests.get('http://api.openweathermap.org/data/2.5/forecast', params=payload)
 
