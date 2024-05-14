@@ -2,6 +2,20 @@
 Pogo-Tymek (Polish RASA weather bot)
 
 Weather Bot that supports over 200 000 cities worldwide.
+<br>
+**DESCRIPTION**
+<br>
+**How it works?**
+<br><br>
+1. Accept Terms of usage
+2. Enter city name
+3. Enter a date
+4. Get the weather
+<br><br>
+- Commands: /restart (restarts conversation with the bot),  /hej (starts the converstion)
+- Bot accepts date formats specified in the date_check.py file
+- Bot can recognize variues cities (including vast majority of polish ones), corrects small typos
+- Issues with running multiple questions to the bot, sometimes gives an unexpected result
 <br><br>
 How to use?
 <br>
