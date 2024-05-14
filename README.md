@@ -21,7 +21,7 @@ Good to know...
 - Issues with running multiple questions to the bot, sometimes gives an unexpected result
 <br><br>
 
-How to use?
+**How to use?**
 <br>
 1. Create an account on https://openweathermap.org/appid
 2. Download your api_key and in directory actions paste it inside api_key variable
@@ -32,7 +32,7 @@ How to use?
 7. Wait for the bot model to load and start chatting ;)
 
 <br><br>
-How to use website with the bot?
+**How to use website with the bot?**
 <br>
 1. Open rasa project and in terminal navigate to rasa project directory
 2. In terminal run: rasa run && rasa run actions
