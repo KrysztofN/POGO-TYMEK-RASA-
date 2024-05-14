@@ -16,5 +16,5 @@
 #         print("Nie można połączyć się z API Telegrama. Sprawdź swój token i upewnij się, że masz połączenie internetowe.")
 #
 # # Wstaw swój token bota
-# token = "6699536277:AAF5ZJgwMcFOaDD6G54xNuDMJw5v2xau0z0"
+# token = "your-token"
 # check_bot(token)
