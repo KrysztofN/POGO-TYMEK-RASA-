@@ -35,3 +35,10 @@ Debugging:
 2. Try to type in terminal: pip install -U aiogram==2.25.2.
 3. If that didn't help try to upgrade rasa and again aiogram.
 4. ![image](https://github.com/KrysztofN/POGO-TYMEK-RASA-/assets/149100411/de2de1ea-0bcd-43de-8017-4b2c6e380a83)
+
+
+Pogo-Tymek in action:
+1. Telegram private conversation: ![one](https://github.com/KrysztofN/POGO-TYMEK-RASA-/assets/149100411/dd2501db-3ce1-4414-bce9-792bc23d1cdd)
+2. Telegram Channel : ![image](https://github.com/KrysztofN/POGO-TYMEK-RASA-/assets/149100411/86177002-c3a4-4e2f-82e3-30455544e072)
+
+
