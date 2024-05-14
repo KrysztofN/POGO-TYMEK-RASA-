@@ -5,7 +5,7 @@ Weather Bot that supports over 200 000 cities worldwide.
 <br><br>
 
 **DESCRIPTION**
-<br><br>
+<br>
 
 **How it works?**
 <br><br>
