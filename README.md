@@ -2,9 +2,11 @@
 Pogo-Tymek (Polish RASA weather bot)
 
 Weather Bot that supports over 200 000 cities worldwide.
-<br>
+<br><br>
+
 **DESCRIPTION**
-<br>
+<br><br>
+
 **How it works?**
 <br><br>
 1. Accept Terms of usage
@@ -17,6 +19,7 @@ Weather Bot that supports over 200 000 cities worldwide.
 - Bot can recognize variues cities (including vast majority of polish ones), corrects small typos
 - Issues with running multiple questions to the bot, sometimes gives an unexpected result
 <br><br>
+
 How to use?
 <br>
 1. Install all neccessary libraries
