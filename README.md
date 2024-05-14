@@ -23,11 +23,13 @@ Good to know...
 
 How to use?
 <br>
-1. Install all neccessary libraries
-2. Open rasa project and in terminal navigate to rasa project directory
-3. Train the model: rasa train
-4. To start Chat with the bot type: rasa run && rasa run actions 
-5. Wait for the bot model to load and start chatting ;)
+1. Create an account on https://openweathermap.org/appid
+2. Download your api_key and in directory actions paste it inside api_key variable
+3. Install all neccessary libraries
+4. Open rasa project and in terminal navigate to rasa project directory
+5. Train the model: rasa train
+6. To start Chat with the bot type: rasa run && rasa run actions 
+7. Wait for the bot model to load and start chatting ;)
 
 <br><br>
 How to use website with the bot?
@@ -46,10 +48,11 @@ How to use website with the bot?
 3. In ngrok copy the "Forwarding" address
 4. Go to Bot Father in telegram : https://telegram.me/BotFather
 5. Follow further steps described here: https://rasa.com/docs/rasa/connectors/telegram/
-6. From step 2 copy the forwarding address into: http://your_forwarding_address/webhooks/telegram/webhook
-7. In terminal type: rasa run --enable-api --cors "*" --debug && rasa run actions
-8. Open your created telegram bot and start a conversation.
-9. You're now able to talk to the bot via telegram
+6. In credentials.yml specify access_token and verify, which will be given by BotFather during the creation of your bot
+7. From step 2 copy the forwarding address into: http://your_forwarding_address/webhooks/telegram/webhook
+8. In terminal type: rasa run --enable-api --cors "*" --debug && rasa run actions
+9. Open your created telegram bot and start a conversation.
+10. You're now able to talk to the bot via telegram
 
 <br><br>
 **Debugging:**
