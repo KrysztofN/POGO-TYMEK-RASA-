@@ -34,4 +34,4 @@ Debugging:
 1. If you have problems with getting internal server error when you try to run your telegram bot
 2. Try to type in terminal: pip install -U aiogram==2.25.2.
 3. If that didn't help try to upgrade rasa and again aiogram.
-![image](https://github.com/KrysztofN/POGO-TYMEK-RASA-/assets/149100411/de2de1ea-0bcd-43de-8017-4b2c6e380a83)
+   ![image](https://github.com/KrysztofN/POGO-TYMEK-RASA-/assets/149100411/de2de1ea-0bcd-43de-8017-4b2c6e380a83)
