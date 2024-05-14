@@ -29,7 +29,7 @@ How to use rasa with telegram?
 8. Open your created telegram bot and start a conversation.
 9. You're now able to talk to the bot via telegram
 
-/n/n
+<br><br>
 Debugging:
 1. If you have problems with getting internal server error when you try to run your telegram bot
 2. Try to type in terminal: pip install -U aiogram==2.25.2.
