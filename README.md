@@ -7,8 +7,9 @@ How to use?
 <br>
 1. Install all neccessary libraries
 2. Open rasa project and in terminal navigate to rasa project directory
-3. To start Chat with the bot type:  rasa run && rasa run actions
-4. Wait for the bot model to load and start chatting ;)
+3. Train the model: rasa train
+4. To start Chat with the bot type: rasa run && rasa run actions 
+5. Wait for the bot model to load and start chatting ;)
 
 <br><br>
 How to use website with the bot?
