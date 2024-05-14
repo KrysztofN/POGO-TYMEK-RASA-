@@ -8,7 +8,7 @@ Weather Bot that supports over 200 000 cities worldwide.
 <br>
 
 **How does it work?**
-<br><br>
+<br>
 1. Accept Terms of usage
 2. Enter city name
 3. Enter a date
