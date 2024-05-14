@@ -1,0 +1,43 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Say 'I'm a weather bot' anytime the user asks unrelated questions
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- rule: Ask to rephrase if they send message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_rephrase
+
+- rule: Restart every time user types command restart
+  steps:
+    - intent: restart
+    - action: action_restart
+    - action: utter_greet
+    - action: utter_loc
+
+- rule: Ask user to accept terms if he denies
+  steps:
+    - action: utter_terms
+    - intent: deny
+    - action: utter_terms_deny
+    - action: utter_terms
+
+- rule: Ask for another city is user agrees
+  steps:
+    - action: utter_continue
+    - intent: affirm
+    - action: utter_loc

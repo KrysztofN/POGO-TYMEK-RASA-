@@ -1,0 +1,107 @@
+version: "3.1"
+
+intents:
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - only_city
+  - only_date
+  - greet
+  - out_of_scope
+  - info
+  - restart
+
+
+entities:
+  - GPE
+  - Date
+  - terms
+
+slots:
+
+  GPE:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: GPE
+  Date:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: Date
+
+  terms:
+    type: bool
+    initial_value: false
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+responses:
+
+  utter_iamabot:
+    - text: "Jestem botem stworzonym przez Rasa"
+
+  utter_loc:
+  - text: "Podaj miasto: "
+
+  utter_date:
+    - text: "Podaj datę: "
+
+  utter_greet:
+    - text: "Witaj!"
+
+  utter_goodbye:
+    - text: "Do usłyszenia;)"
+
+  utter_continue:
+    - text: "Chcesz sprawdzić inne miasto?"
+
+  utter_terms:
+    - condition:
+        - type: slot
+          name: terms
+          value: false
+      text: "Czy wyrażasz zgodę na warunki korzystania z Pogo-Tymka?"
+      buttons:
+        - title: "Tak"
+          payload: "/affirm"
+        - title: "Nie"
+          payload: "/deny"
+    - text: "Podaj miasto: "
+
+  utter_terms_deny:
+    - text: "Aby kontynuować musisz wyrazić zgodę!"
+
+  utter_out_of_scope:
+    - text: "Jestem botem pogodowym. Przepowiadam jedynie pogodę"
+
+  utter_rephrase:
+    - text: "Nie rozumiem. Czy możesz zadać pytanie inaczej?"
+
+  utter_info:
+    - text: "Tutaj Pogo-Tymek - twój personalny bot pogodowy. Podaj miasto i datę a ja podam ci pogodę! (Przepowiadam pogodę na 6 dni od dzisiejszej daty)"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_iamabot
+  - utter_rephrase
+  - utter_loc
+  - utter_continue
+  - utter_date
+  - utter_info
+  - utter_out_of_scope
+  - utter_terms_deny
+  - utter_terms
+  - action_tell_weather
+  - action_restart
+  - action_set_executed_true

@@ -1,0 +1,63 @@
+version: "3.1"
+
+stories:
+
+#------------------------------------BASIC ACTIONS-----------------------------------------------
+  - story: User greets and affirms
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_terms
+      - intent: affirm
+      - action: action_set_executed_true
+      - action: utter_info
+      - action: utter_loc
+
+  - story: User greets and denies
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_terms
+      - intent: deny
+      - action: utter_terms_deny
+      - action: utter_terms
+
+  - story: goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: inform
+    steps:
+      - intent: info
+      - action: utter_info
+
+
+  - story: user challenges bot
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+#------------------------------------WEATHER -----------------------------------------------
+
+  - story: User enters date and denies
+    steps:
+      - intent: only_city
+      - action: utter_date
+      - intent: only_date
+      - action: action_tell_weather
+      - action: utter_continue
+      - intent: affirm
+      - action: utter_loc
+
+  - story: User enters date and affirms
+    steps:
+      - intent: only_city
+      - action: utter_date
+      - intent: only_date
+      - action: action_tell_weather
+      - action: utter_continue
+      - intent: deny
+      - action: utter_goodbye
+
+

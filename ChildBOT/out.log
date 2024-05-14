@@ -1,0 +1,105 @@
+2024-05-13 00:14:22,915 [INFO ]  Starting Rasa server on http://0.0.0.0:5005
+2024-05-13 00:14:23,455 [INFO ]  Loading model models\20240513-001014-curious-paste.tar.gz...
+2024-05-13 00:14:23,880 [INFO ]  Trying to load SpaCy model with name 'pl_core_news_sm'.
+2024-05-13 00:14:25,122 [INFO ]  Trying to load SpaCy model with name 'pl_core_news_sm'.
+2024-05-13 00:15:07,856 [INFO ]  Rasa server is up and running.
+2024-05-13 00:15:53,929 [ERROR]  Exception occurred while handling uri: 'http://f9f8-91-189-30-46.ngrok-free.app/webhooks/telegram/webhook'
+Traceback (most recent call last):
+  File "handle_request", line 83, in handle_request
+    )
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\rasa\core\channels\telegram.py", line 223, in message
+    credentials = await out_channel.get_me()
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiogram\bot\bot.py", line 215, in get_me
+    result = await self.request(api.Methods.GET_ME, payload)
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiohttp\client.py", line 1197, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiohttp\client.py", line 479, in _request
+    handle = tm.start()
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiohttp\helpers.py", line 660, in start
+    return self._loop.call_at(when, self.__call__)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\base_events.py", line 732, in call_at
+    self._check_closed()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2024-05-13 00:17:30,843 [ERROR]  Exception occurred while handling uri: 'http://f9f8-91-189-30-46.ngrok-free.app/webhooks/telegram/webhook'
+Traceback (most recent call last):
+  File "handle_request", line 124, in handle_request
+sanic.exceptions.ServerError: Invalid response type None (need HTTPResponse)
+2024-05-13 00:17:47,982 [ERROR]  Exception occurred while handling uri: 'http://f9f8-91-189-30-46.ngrok-free.app/webhooks/telegram/webhook'
+Traceback (most recent call last):
+  File "handle_request", line 83, in handle_request
+    )
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\rasa\core\channels\telegram.py", line 223, in message
+    credentials = await out_channel.get_me()
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiogram\bot\bot.py", line 215, in get_me
+    result = await self.request(api.Methods.GET_ME, payload)
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiohttp\client.py", line 1197, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiohttp\client.py", line 479, in _request
+    handle = tm.start()
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiohttp\helpers.py", line 660, in start
+    return self._loop.call_at(when, self.__call__)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\base_events.py", line 732, in call_at
+    self._check_closed()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2024-05-13 00:18:58,506 [ERROR]  Exception occurred while handling uri: 'http://f9f8-91-189-30-46.ngrok-free.app/webhooks/telegram/webhook'
+Traceback (most recent call last):
+  File "handle_request", line 124, in handle_request
+sanic.exceptions.ServerError: Invalid response type None (need HTTPResponse)
+2024-05-13 00:19:36,042 [ERROR]  Exception occurred while handling uri: 'http://f9f8-91-189-30-46.ngrok-free.app/webhooks/telegram/webhook'
+Traceback (most recent call last):
+  File "handle_request", line 83, in handle_request
+    )
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\rasa\core\channels\telegram.py", line 223, in message
+    credentials = await out_channel.get_me()
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiogram\bot\bot.py", line 215, in get_me
+    result = await self.request(api.Methods.GET_ME, payload)
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiohttp\client.py", line 1197, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiohttp\client.py", line 479, in _request
+    handle = tm.start()
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiohttp\helpers.py", line 660, in start
+    return self._loop.call_at(when, self.__call__)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\base_events.py", line 732, in call_at
+    self._check_closed()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2024-05-13 00:21:28,122 [ERROR]  Exception occurred while handling uri: 'http://f9f8-91-189-30-46.ngrok-free.app/webhooks/telegram/webhook'
+Traceback (most recent call last):
+  File "handle_request", line 83, in handle_request
+    )
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\rasa\core\channels\telegram.py", line 223, in message
+    credentials = await out_channel.get_me()
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiogram\bot\bot.py", line 215, in get_me
+    result = await self.request(api.Methods.GET_ME, payload)
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiohttp\client.py", line 1197, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiohttp\client.py", line 479, in _request
+    handle = tm.start()
+  File "C:\Users\Dell\.virtualenvs\MainBOT\lib\site-packages\aiohttp\helpers.py", line 660, in start
+    return self._loop.call_at(when, self.__call__)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\base_events.py", line 732, in call_at
+    self._check_closed()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed

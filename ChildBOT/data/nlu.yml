@@ -1,0 +1,631 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hej
+    - hej
+    - cześć
+    - witaj
+    - siema
+    - cześć, jak się masz?
+    - dzień dobry
+    - dobry wieczór
+    - moin
+    - cześć, co u Ciebie?
+    - dawajmy
+    - cześć, ziomek
+    - dobry wieczór
+    - elo
+    - siemanko
+    - dzień doberek
+    - zaczynajmy
+    - start
+
+- intent: goodbye
+  examples: |
+    - do widzenia
+    - na razie
+    - dobranoc
+    - pa
+    - miłego dnia
+    - do zobaczenia
+    - pa pa
+    - do zobaczenia później
+    - żegnaj
+
+- intent: affirm
+  examples: |
+    - t
+    - tak
+    - Tak
+    - /tak
+    - zgadza się
+    - oczywiście
+    - jak najbardziej
+    - brzmi dobrze
+    - poprawne
+    - zgadzam się
+    - jasne
+
+- intent: deny
+  examples: |
+    - nie
+    - n
+    - nigdy
+    - nie sądzę
+    - nie lubię tego
+    - nie ma mowy
+    - nie za bardzo
+    - /nie
+    - Nie
+
+- intent: bot_challenge
+  examples: |
+    - czy jesteś botem?
+    - czy jesteś człowiekiem?
+    - czy rozmawiam z botem?
+    - czy rozmawiam z człowiekiem?
+
+- intent: info
+  examples: |
+    - info
+    - Info
+    - opis
+    - help
+
+- intent: restart
+  examples: |
+    - restart
+    - /restart
+
+- intent: out_of_scope
+  examples: |
+    - Ile to 2+2?
+    - Jak się masz?
+    - Jaka jest historia polski?
+    - Czy ptaki umią latać?
+    - Być czy nie być?
+    - Czy praca w życiu człowieka jest potrzebna?
+    - Co to jest kwantowa teoria pola?
+    - Dlaczego niebo jest niebieskie?
+    - Kto napisał utwór "Pan Tadeusz"?
+    - Jaka jest stolica Francji?
+    - Jakie jest najwyższe góra na świecie?
+    - Czy można podróżować w czasie?
+    - Co to jest teoria względności?
+    - Ile kosztuje bilet na koncert?
+    - Czy jesteśmy sami w kosmosie?
+    - Kto jest autorem dzieła "Wesele"?
+    - Czy istnieje magia?
+    - Jaki jest sens życia?
+    - Dlaczego słońce świeci?
+    - Czy istnieją równoległe wszechświaty?
+    - Dlaczego trawa jest zielona?
+    - Dlaczego słońce zachodzi na zachodzie?
+    - Jak długo trwał Wielki Kryzys?
+    - Czy psy potrafią rozumieć ludzką mowę?
+    - Jaka jest różnica między DNS a RNA?
+    - Czy istnieje życie na innych planetach?
+    - Jakie są najbardziej popularne gatunki muzyki?
+    - Czy można wyleczyć przeziębienie za pomocą herbaty?
+    - Jaki jest największy kontynent na Ziemi?
+    - Co to jest teoria strun?
+    - Dlaczego księżyc ma fazy?
+    - Czy rośliny mają świadomość?
+    - Kto odkrył Amerykę?
+    - Czy ludzie kiedykolwiek osiągną nieśmiertelność?
+    - Jakie są skutki globalnego ocieplenia?
+    - Co to jest DNA?
+    - Czy istnieją czarownice?
+    - Jaki jest średni wiek życia człowieka?
+    - Czy istnieją obce cywilizacje?
+    - Dlaczego trawa jest zielona?
+    - Jakie są największe oceany na Ziemi?
+
+
+- intent: only_city
+  examples: |
+    - [Abramowice](GPE)
+    - [Abramowice Kościelne](GPE)
+    - [Abramowice Prywatne](GPE)
+    - [Abramów](GPE)
+    - [Abramówka](GPE)
+    - [Abramów-Kolonia](GPE)
+    - [Abramy](GPE)
+    - [Achrymowce](GPE)
+    - [Aleksandria Krzywowolska](GPE)
+    - [Aleksandria Niedziałowska](GPE)
+    - [Antoniówka Świerżowska](GPE)
+    - [Antoniówka Wilczkowska](GPE)
+    - [Apolonka-Leśniczówka](GPE)
+    - [Babi Brzuch](GPE)
+    - [Babi Dół](GPE)
+    - [Babice-Kolonia](GPE)
+    - [Babiec-Więczanki](GPE)
+    - [Babiec-Wrzosy](GPE)
+    - [Bachmackie Kolonie](GPE)
+    - [Bajerska Maszyna](GPE)
+    - [Bajerze](GPE)
+    - [Bajki-Zalesie](GPE)
+    - [Bałamącek](GPE)
+    - [Bałamątek](GPE)
+    - [Bańki](GPE)
+    - [Bańkowskie](GPE)
+    - [Bańkowszczyzna](GPE)
+    - [Barcice Rososkie](GPE)
+    - [Bartodzieje Włościańskie](GPE)
+    - [Bartodzieje-Gajówka](GPE)
+    - [Bartodzieje-Kolonia](GPE)
+    - [Bartodziejewice](GPE)
+    - [Bartolin](GPE)
+    - [Bartolino](GPE)
+    - [Bartołdy](GPE)
+    - [Bąbolowa](GPE)
+    - [Bąbolówka](GPE)
+    - [Biała-Parcela Druga](GPE)
+    - [Biała-Parcela Trzecia](GPE)
+    - [Biały Dół](GPE)
+    - [Biały Dunajec](GPE)
+    - [Biskupie Sarnowskie](GPE)
+    - [Biskupiec](GPE)
+    - [Biskupiec Pomorski](GPE)
+    - [Biskupiec-Kolonia Druga](GPE)
+    - [Chojęcin-Parcele](GPE)
+    - [Chojęcin-Resztówka](GPE)
+    - [Chojęcin-Szum](GPE)
+    - [Chojna](GPE)
+    - [Chrościce-Łyczki](GPE)
+    - [Chrościn](GPE)
+    - [Chrośla](GPE)
+    - [Chrośle](GPE)
+    - [Chroślice](GPE)
+    - [Chrośna](GPE)
+    - [Chrośnica](GPE)
+    - [Chrośno](GPE)
+    - [Chróstnik](GPE)
+    - [Dawidów](GPE)
+    - [Dawidówka](GPE)
+    - [Dawidy](GPE)
+    - [Dawidy Bankowe](GPE)
+    - [Dawidy Poduchowne](GPE)
+    - [Dawidy Zwykłe](GPE)
+    - [Dąbrowa Białogardzka](GPE)
+    - [Dąbrowa Białostocka](GPE)
+    - [Dąbrowa Biskupia](GPE)
+    - [Dąbrowa Bolesławiecka](GPE)
+    - [Długowola Pierwsza](GPE)
+    - [Dłusk](GPE)
+    - [Dłuska Wola](GPE)
+    - [Dłusko](GPE)
+    - [Dłusko Gryfińskie](GPE)
+    - [Gałków](GPE)
+    - [Gałków Duży](GPE)
+    - [Gałków Mały](GPE)
+    - [Gałkówek-Kolonia](GPE)
+    - [Gałkówek-Parcela](GPE)
+    - [Gródźki](GPE)
+    - [Grójczyk](GPE)
+    - [Grójec](GPE)
+    - [Grójec Mały](GPE)
+    - [Grójec Wielki](GPE)
+    - [Jedamki](GPE)
+    - [Jedamki](GPE)
+    - [Jedlane](GPE)
+    - [Jedlanka](GPE)
+    - [Jeżewo](GPE)
+    - [Jeżewo Nowe](GPE)
+    - [Jeżewo Stare](GPE)
+    - [Jeżewo-Gajówka](GPE)
+    - [Kamieńskie](GPE)
+    - [Kamieńskie Młyny](GPE)
+    - [Kamieńsko](GPE)
+    - [Kamień-Słubice](GPE)
+    - [Kamieńszczyzna](GPE)
+    - [Kamieńszczyzna Dolna](GPE)
+    - [Komorne](GPE)
+    - [Komornica](GPE)
+    - [Komornicze-Książyzna](GPE)
+    - [Koziel](GPE)
+    - [Kozielce](GPE)
+    - [Kozielec](GPE)
+    - [Kozielice](GPE)
+    - [Kozielno](GPE)
+    - [Kozielsk](GPE)
+    - [Kozielsko](GPE)
+    - [Lipienice Górne](GPE)
+    - [Lipieniec](GPE)
+    - [Lipienki](GPE)
+    - [Lipin](GPE)
+    - [Lipina](GPE)
+    - [Lubkówek](GPE)
+    - [Lubla](GPE)
+    - [Lublewko](GPE)
+    - [Lwówek Śląski](GPE)
+    - [Lyski](GPE)
+    - [Lyszcze](GPE)
+    - [Lyta](GPE)
+    - [Lzy](GPE)
+    - [Łuknajno](GPE)
+    - [Łukocin](GPE)
+    - [Łukom](GPE)
+    - [Łukomie](GPE)
+    - [Łuski](GPE)
+    - [Łuskowo](GPE)
+    - [Łuszczacz](GPE)
+    - [Łuszczanowice](GPE)
+    - [Łuszczanowice-Kolonia](GPE)
+    - [Machcinko](GPE)
+    - [Machcino](GPE)
+    - [Machety](GPE)
+    - [Machliny](GPE)
+    - [Machnacz](GPE)
+    - [Majdany](GPE)
+    - [Majdany Małe](GPE)
+    - [Majdany Rusin](GPE)
+    - [Majdany Wielkie](GPE)
+    - [Majdany-Kolonia](GPE)
+    - [Majdany-Leśniczówka](GPE)
+    - [Majdańskie](GPE)
+    - [Malanówki](GPE)
+    - [Malanówko](GPE)
+    - [Malarka](GPE)
+    - [Malarki](GPE)
+    - [Małe Pluty](GPE)
+    - [Małe Pole](GPE)
+    - [Małe Przanowice](GPE)
+    - [Małusy Wielkie](GPE)
+    - [Małuszów](GPE)
+    - [Małuszyn](GPE)
+    - [Małutówka Dolna](GPE)
+    - [Małutówka Górna](GPE)
+    - [Mankocin](GPE)
+    - [Manowo](GPE)
+    - [Mansfeldy](GPE)
+    - [Mantyki](GPE)
+    - [Markówka](GPE)
+    - [Markówki](GPE)
+    - [Marków-Świnice](GPE)
+    - [Marków-Towarzystwo](GPE)
+    - [Mystki-Rzym](GPE)
+    - [Mystkowice](GPE)
+    - [Mystkowice Małe](GPE)
+    - [Nadrossowska](GPE)
+    - [Nadrowo](GPE)
+    - [Nadrożna](GPE)
+    - [Nadrożno](GPE)
+    - [Najdziszów](GPE)
+    - [Najmowo](GPE)
+    - [Najmów](GPE)
+    - [Najmusy](GPE)
+    - [Nakamień](GPE)
+    - [Natków](GPE)
+    - [Natolewice](GPE)
+    - [Natolewiczki](GPE)
+    - [Ner](GPE)
+    - [Nerki](GPE)
+    - [Nerki Cetowskie](GPE)
+    - [Niedośpiały](GPE)
+    - [Niedośpielin](GPE)
+    - [Niedów](GPE)
+    - [Niedrzaków](GPE)
+    - [Nosalewice](GPE)
+    - [Nosalewo](GPE)
+    - [Nosalin](GPE)
+    - [Nosalowa](GPE)
+    - [Okuninka](GPE)
+    - [Okuninko](GPE)
+    - [Okunino](GPE)
+    - [Olsz](GPE)
+    - [Olsza](GPE)
+    - [Olszak](GPE)
+    - [Olszaki](GPE)
+    - [Ołużna](GPE)
+    - [Omeliny](GPE)
+    - [Omieciny](GPE)
+    - [Opiłki Płoskie](GPE)
+    - [Opin](GPE)
+    - [Orzyszka](GPE)
+    - [Osa](GPE)
+    - [Osada](GPE)
+    - [Oszczędy](GPE)
+    - [Oszczów](GPE)
+    - [Oszczów-Kolonia](GPE)
+    - [Ożarów Mazowiecki](GPE)
+    - [Ożarów Pierwszy](GPE)
+    - [Ożarówka](GPE)
+    - [Pajdziki](GPE)
+    - [Pajewo](GPE)
+    - [Pajewo Wielkie](GPE)
+    - [Pajewo-Cyty](GPE)
+    - [Papizy](GPE)
+    - [Paplin](GPE)
+    - [Paplinek](GPE)
+    - [Parowa](GPE)
+    - [Parowa Falęcka](GPE)
+    - [Parowie](GPE)
+    - [Pęczki-Kozłowo](GPE)
+    - [Pęczków](GPE)
+    - [Pęczkówka](GPE)
+    - [Piersko](GPE)
+    - [Piersławek](GPE)
+    - [Pijawnia](GPE)
+    - [Pikanie](GPE)
+    - [Pikaniówka](GPE)
+    - [Piskory](GPE)
+    - [Piskorz](GPE)
+    - [Piskorze](GPE)
+    - [Pluski](GPE)
+    - [Pluskocin](GPE)
+    - [Pustelnikowa](GPE)
+    - [Pustka](GPE)
+    - [Pustka Cierchowska](GPE)
+    - [Rawki](GPE)
+    - [Rawy](GPE)
+    - [Rezerwa](GPE)
+    - [Rezlerka](GPE)
+    - [Rezowa Droga](GPE)
+    - [Rzuchowa](GPE)
+    - [Rzuchów](GPE)
+    - [Rzuców](GPE)
+    - [Sękowiec](GPE)
+    - [Sękowo](GPE)
+    - [Sęków](GPE)
+    - [Sękówka](GPE)
+    - [Siemianowo](GPE)
+    - [Siemianowskie](GPE)
+    - [Sikorszczyzna](GPE)
+    - [Sikory](GPE)
+    - [Skurów](GPE)
+    - [Skurpie](GPE)
+    - [Skustele](GPE)
+    - [Sobącz](GPE)
+    - [Sobczaki](GPE)
+    - [Szlasy-Złotki](GPE)
+    - [Szlatyn](GPE)
+    - [Śląskowo](GPE)
+    - [Ślebodówka](GPE)
+    - [Ślęzany](GPE)
+    - [Ślężany](GPE)
+    - [Ślichowice](GPE)
+    - [Śmiłowiczki](GPE)
+    - [Śmiłowo](GPE)
+    - [Śmiłów](GPE)
+    - [Śniadka Druga](GPE)
+    - [Śródborze](GPE)
+    - [Śródborze Miłkowskie](GPE)
+    - [Świrydy](GPE)
+    - [Świrzanki](GPE)
+    - [Świsłoczany](GPE)
+    - [Talagowa Góra](GPE)
+    - [Talagówka](GPE)
+    - [Talapówka](GPE)
+    - [Tarasówka](GPE)
+    - [Tarce](GPE)
+    - [Tarchalice](GPE)
+    - [Trzy Norty](GPE)
+    - [Trzy Rzeki](GPE)
+    - [U Jazu](GPE)
+    - [U Jędrzejaka](GPE)
+    - [U Jończyka](GPE)
+    - [U Waliczka](GPE)
+    - [U Warty](GPE)
+    - [U Wenca](GPE)
+    - [Uciąchy](GPE)
+    - [Uciąż](GPE)
+    - [Ulanica](GPE)
+    - [Ulan-Majorat](GPE)
+    - [Ulanowice](GPE)
+    - [Umieszcz](GPE)
+    - [Umiotki](GPE)
+    - [Umultowo](GPE)
+    - [Walsztat](GPE)
+    - [Walusin](GPE)
+    - [Wał](GPE)
+    - [Wałachowo](GPE)
+    - [Warzechówka](GPE)
+    - [Warzechy](GPE)
+    - [Warzenko](GPE)
+    - [Wądolno](GPE)
+    - [Wądołek](GPE)
+    - [Wądołki](GPE)
+    - [Werbówki](GPE)
+    - [Werchliś](GPE)
+    - [Węgornik](GPE)
+    - [Węgorsko](GPE)
+    - [Wichów](GPE)
+    - [Wichradz](GPE)
+    - [Wichraż](GPE)
+    - [Wieniotowo](GPE)
+    - [Wieńce](GPE)
+    - [Wieńkowo](GPE)
+    - [Włochy-Nowa Wieś](GPE)
+    - [Włochy-Wieś](GPE)
+    - [Włocin Drugi](GPE)
+    - [Wojakowa](GPE)
+    - [Wojanowo](GPE)
+    - [Wojanowo-Leśniczówka](GPE)
+    - [Wola Murowana](GPE)
+    - [Wola Mysłowska](GPE)
+    - [Wola Mystkowska](GPE)
+    - [Wolica Brzozowa](GPE)
+    - [Wolica Brzozowa-Kolonia](GPE)
+    - [Woźnówka](GPE)
+    - [Wożuczyn](GPE)
+    - [Wożuczyn-Cukrownia](GPE)
+    - [Wólka Smolana](GPE)
+    - [Wymysłówek](GPE)
+    - [Wymysłów-Enklawa](GPE)
+    - [Wymysłówka](GPE)
+    - [Wyżna Paproć](GPE)
+    - [Wyżna Wieś](GPE)
+    - [Za Brodem](GPE)
+    - [Za Browarem](GPE)
+    - [Zabaniszcze](GPE)
+    - [Zabaranie](GPE)
+    - [Zabardowice](GPE)
+    - [Zadziale](GPE)
+    - [Zadział](GPE)
+    - [Zadzianek](GPE)
+    - [Zagrody Pierwsze](GPE)
+    - [Zagrody Słoneczne](GPE)
+    - [Zakrzów Turawski](GPE)
+    - [Zakrzówek](GPE)
+    - [Zakrzówek Nowy](GPE)
+    - [Załęska Hałda](GPE)
+    - [Załęskie Piaski](GPE)
+    - [Zameczek-Kolonia](GPE)
+    - [Zameczno](GPE)
+    - [Zamek](GPE)
+    - [Zawisie](GPE)
+    - [Zawisin](GPE)
+    - [Zawisłocze](GPE)
+    - [Zdziar-Las](GPE)
+    - [Zdziar-Łopatki](GPE)
+    - [Ziomek](GPE)
+    - [Ziółkowo](GPE)
+    - [Ziółkowo-Majątek](GPE)
+    - [Ziółkowo-Wybudowanie](GPE)
+    - [Zołcza-Ugory](GPE)
+    - [Zomrze](GPE)
+    - [Zonia](GPE)
+    - [Zygmuntówka](GPE)
+    - [Zygmunty](GPE)
+    - [Żabka](GPE)
+    - [Żabków](GPE)
+    - [Żabna](GPE)
+    - [Żarka nad Nysą](GPE)
+    - [Żarki](GPE)
+    - [Żarki Małe](GPE)
+    - [Żarki Średnie](GPE)
+    - [Żelgoszcz](GPE)
+    - [Żelice](GPE)
+    - [Żelichowo](GPE)
+    - [Żodzie](GPE)
+    - [Żohatyn](GPE)
+    - [Żoliborz](GPE)
+    - [Żywczaki](GPE)
+    - [Żywczańskie](GPE)
+    - [Żywiec](GPE)
+    - [Żywki](GPE)
+    - [Żywki Małe](GPE)
+    - [warszawa](GPE)
+    - [kraków](GPE)
+    - [Żywiec](GPE)
+    - [Jeleśnia](GPE)
+    - [gdańsk](GPE)
+    - [Radom](GPE)
+    - [Częstochowa](GPE)
+    - [Nowa wieś](GPE)
+    - [Bielsko-Biała](GPE)
+    - [Zielona Góra](GPE)
+    - [Tychy](GPE)
+    - [Gorzów Wielkopolksi](GPE)
+    - [Rybnik](GPE)
+    - [Elbląg](GPE)
+    - [Toruń](GPE)
+    - [wrocław](GPE)
+    - [poznań](GPE)
+    - [szczecin](GPE)
+    - [łódź](GPE)
+    - [Katowice](GPE)
+    - [Kobyłka](GPE)
+    - [Białystok](GPE)
+    - [Bydgoszcz](GPE)
+    - [Lublin](GPE)
+    - [Częstochowa](GPE)
+    - [Gdynia](GPE)
+    - [Radom](GPE)
+    - [Sosnowiec](GPE)
+    - [Jeleśnia](GPE)
+    - [Toruń](GPE)
+    - [Kielce](GPE)
+    - [Rzeszów](GPE)
+    - [Gliwice](GPE)
+    - [Zabrze](GPE)
+    - [Szczyrk](GPE)
+    - [Ruda śląska](GPE)
+    - [Nowy Dwór Mazowiecki](GPE)
+    - [Nowy Jork](GPE)
+    - [Tokio](GPE)
+    - [Moskwa](GPE)
+    - [Sao Paulo](GPE)
+    - [Istanbuł](GPE)
+    - [Meksyk](GPE)
+    - [Los angeles](GPE)
+    - [Pekin](GPE)
+    - [Mumbai](GPE)
+    - [Szanghaj](GPE)
+    - [Paryż](GPE)
+    - [Berlin](GPE)
+    - [San Diego](GPE)
+    - [Chicago](GPE)
+    - [Seattle](GPE)
+    - [Sofia](GPE)
+    - [Jeleśnia](GPE)
+    - [Geneva](GPE)
+    - [Grodzisk Mazowiecki](GPE)
+    - [Praga](GPE)
+    - [Budapeszt](GPE)
+    - [Oslo](GPE)
+    - [Sztokholm](GPE)
+    - [Zagrzeb](GPE)
+    - [Dublin](GPE)
+    - [Lizbona](GPE)
+    - [Rzym](GPE)
+
+- intent: only_date
+  examples: |
+    - [2 luty](Date)
+    - [5 maj](Date)
+    - [10 wrzesień](Date)
+    - [4 czerwiec](Date)
+    - [6 grudzień](Date)
+    - [6 listopad](Date)
+    - [6 kwiecień](Date)
+    - [6 styczeń](Date)
+    - [6 lipiec](Date)
+    - [6 LIPIEc](Date)
+    - [6 LIpiec](Date)
+    - [6 CZERWIEC](Date)
+    - [5 sierpień](Date)
+    - [5 SIERPIEŃ](Date)
+    - [5 sierpień 2024](Date)
+    - [5 lipiec 2024](Date)
+    - [5 maj 2024](Date)
+    - [5 MAJ 2024](Date)
+    - [5 sty 2024](Date)
+    - [19 kwi 2024](Date)
+    - [5 sierpień 24](Date)
+    - [8 sty](Date)
+    - [10 wrz](Date)
+    - [10 wrz 2024](Date)
+    - [15 paź 24](Date)
+    - [31 paź 24](Date)
+    - [11 sie](Date)
+    - [31 lut](Date)
+    - [19 maj](Date)
+    - [wrz 10](Date)
+    - [paź 30](Date)
+    - [kwi 16](Date)
+    - [STY 16](Date)
+    - [KWI 16](Date)
+    - [maj 4](Date)
+    - [LUT 20](Date)
+    - [sty 18](Date)
+    - [luty 31](Date)
+    - [marzec 28](Date)
+    - [październik 15](Date)
+    - [02-03-2024](Date)
+    - [29-12-2024](Date)
+    - [29 12 2024](Date)
+    - [29.12.2024](Date)
+    - [29/12/2024](Date)
+    - [02/03/2024](Date)
+    - [02/14/2021](Date)
+    - [02 14 2021](Date)
+    - [03 14 24](Date)
+    - [03-14-24](Date)
+    - [03/14/24](Date)
+    - [03.14.24](Date)
+    
